@@ -44,7 +44,7 @@ export default function CardView() {
 		<div>
 			<div className="card-view">
 				<Card rounded elevation={3} width={300}>
-					<Carousel cycle interval={3000}>
+					<Carousel cycle interval={3000} showArrows vertical>
 						<CarouselItem>
 							<img src={ciruelos_cover_1} className="image01" />
 						</CarouselItem>
@@ -86,7 +86,7 @@ export default function CardView() {
 				</Card>
 
 				<Card rounded elevation={3} width={300}>
-					<Carousel cycle interval={3000}>
+					<Carousel cycle interval={3000} showArrows vertical>
 						<CarouselItem>
 							<img src={hermoso_cover_1} className="image01" />
 						</CarouselItem>
@@ -128,7 +128,7 @@ export default function CardView() {
 				</Card>
 
 				<Card rounded elevation={3} width={300}>
-					<Carousel cycle interval={3000}>
+					<Carousel cycle interval={3000} showArrows vertical>
 						<CarouselItem>
 							<img src={lujoso_cover_1} className="image01" />
 						</CarouselItem>
@@ -170,7 +170,7 @@ export default function CardView() {
 				</Card>
 
 				<Card rounded elevation={3} width={300}>
-					<Carousel cycle interval={3000}>
+					<Carousel cycle interval={3000} showArrows vertical>
 						<CarouselItem>
 							<img src={penthouse_cover_1} className="image01" />
 						</CarouselItem>
@@ -212,7 +212,7 @@ export default function CardView() {
 				</Card>
 
 				<Card rounded elevation={3} width={300}>
-					<Carousel cycle interval={3000}>
+					<Carousel cycle interval={3000} vertical>
 						<CarouselItem>
 							<ReactPlayer
 								url="https://www.youtube.com/watch?v=yWsKTMmIkys"

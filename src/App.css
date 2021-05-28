@@ -1,0 +1,85 @@
+/* .Navbar {
+	background: #212429 !important;
+}
+
+.Navbar > a {
+	font-size: 16px !important;
+	font-family: 'Lato', sans-serif;
+	margin: 20px;
+	text-decoration: none;
+	font-family: "Lato", sans-serif !important;
+	font-weight: 600;
+}
+
+.Appbar span {
+	font-family: "Lato", sans-serif !important;
+	font-weight: 900 !important;
+	color: white !important;
+	left: 30px;
+	margin: auto;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+	font-family: "Lato", sans-serif !important;
+}
+
+.Navbar {
+	background: #212429 !important;
+}
+.Navbar > a {
+	font-size: 16px !important;
+	font-family: "Lato", sans-serif;
+}
+
+.NavItems:after {
+	transition: 0.2s !important;
+}
+.selected:after {
+	width: 100% !important;
+}
+
+.trigger {
+	transition: 0s !important;
+}
+
+.Appbar span {
+	font-size: 23px !important;
+	font-weight: 900 !important;
+	color: white !important;
+}
+
+@media only screen and (max-width: 700px) {
+	.Appbar {
+		background: #212429 !important;
+	}
+	.Navbar {
+		width: 100% !important;
+		transition: 0.3s !important;
+	}
+	.Appbar img {
+		left: auto !important;
+	}
+	.Appbar span {
+		left: auto !important;
+	}
+	.NavItems:after {
+		height: 0px !important;
+	}
+	.NavItems {
+		text-align: center !important;
+		background-color: transparent !important;
+	}
+	.selected {
+		width: 100% !important;
+		padding-top: 7px !important;
+		padding-bottom: 7px !important;
+		background-color: #1d1f24 !important;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.Navbar {
+		width: 100% !important;
+	}
+}
