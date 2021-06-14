@@ -101,7 +101,7 @@ export default function CardView() {
               color="var(--primary)"
               size="large"
               style={{ paddingRight: 35, paddingLeft: 35 }}
-              onClick={() => history.push("/depto1")}
+              onClick={() => history.push("/bix-inmobiliaria/depto1")}
             >
               Ver más
             </Button>
@@ -158,7 +158,7 @@ export default function CardView() {
               color="var(--primary)"
               size="large"
               style={{ paddingRight: 35, paddingLeft: 35 }}
-              onClick={() => history.push("/depto2")}
+              onClick={() => history.push("/bix-inmobiliaria/depto2")}
             >
               Ver más
             </Button>
@@ -215,7 +215,7 @@ export default function CardView() {
               color="var(--primary)"
               size="large"
               style={{ paddingRight: 35, paddingLeft: 35 }}
-              onClick={() => history.push("/depto3")}
+              onClick={() => history.push("/bix-inmobiliaria/depto3")}
             >
               Ver más
             </Button>
@@ -272,7 +272,7 @@ export default function CardView() {
               color="var(--primary)"
               size="large"
               style={{ paddingRight: 35, paddingLeft: 35 }}
-              onClick={() => history.push("/depto4")}
+              onClick={() => history.push("/bix-inmobiliaria/depto4")}
             >
               Ver más
             </Button>
@@ -322,7 +322,7 @@ export default function CardView() {
               color="var(--primary)"
               size="large"
               style={{ paddingRight: 35, paddingLeft: 35 }}
-              onClick={() => history.push("/depto5")}
+              onClick={() => history.push("/bix-inmobiliaria/depto5")}
             >
               Ver más
             </Button>

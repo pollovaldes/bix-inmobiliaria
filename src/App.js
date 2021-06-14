@@ -11,14 +11,14 @@ import Depto_lindo from "./components/pages/details/depto_lindo/Depto_lindo";
 
 function App() {
   const links = [
-    ["/", "Inicio", Home],
-    ["/About", "¿Quiénes somos?", About],
-    ["/Contact", "Contáctanos", Contact],
-    ["/depto1", "", Depto_torreCiruelos],
-    ["/depto2", "", Depto_hermoso],
-    ["/depto3", "", Depto_lujoso],
-    ["/depto4", "", Depto_penthouse],
-    ["/depto5", "", Depto_lindo],
+    ["/bix-inmobiliaria", "Inicio", Home],
+    ["/bix-inmobiliaria/About", "¿Quiénes somos?", About],
+    ["/bix-inmobiliaria/Contact", "Contáctanos", Contact],
+    ["/bix-inmobiliaria/depto1", "", Depto_torreCiruelos],
+    ["/bix-inmobiliaria/depto2", "", Depto_hermoso],
+    ["/bix-inmobiliaria/depto3", "", Depto_lujoso],
+    ["/bix-inmobiliaria/depto4", "", Depto_penthouse],
+    ["/bix-inmobiliaria/depto5", "", Depto_lindo],
   ];
 
   return (
