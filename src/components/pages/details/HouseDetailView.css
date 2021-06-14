@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(34, 34, 34);
+}
+
+.container {
+  max-width: 100rem;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.8fr 1.6fr 0.6fr;
+  grid-template:
+    "image general_data"
+    "description contact"
+    "location location";
+  grid-gap: 18px;
+}
+
+.image {
+  grid-area: image;
+  min-width: 550px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 15px;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.397);
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.image_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.general_data {
+  grid-area: general_data;
+  min-width: 350px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 15px;
+  box-shadow: 10px 5px 1rem rgba(0, 0, 0, 0.267);
+}
+
+.general_data_p {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.description {
+  grid-area: description;
+  background-color: rgb(241, 241, 241);
+  border-radius: 15px;
+  box-shadow: 10px 5px 1rem rgba(0, 0, 0, 0.267);
+}
+
+.description_li {
+  list-style-type: none;
+}
+
+.description_p {
+  padding-left: 25px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.contact {
+  background-color: rgb(241, 241, 241);
+  border-radius: 15px;
+  box-shadow: 10px 5px 1rem rgba(0, 0, 0, 0.267);
+  grid-area: contact;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact_p {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 10px 5px 0.5rem rgba(0, 0, 0, 0.267);
+}
+
+.location {
+  grid-area: location;
+  background-color: rgb(241, 241, 241);
+  border-radius: 15px;
+  box-shadow: 10px 5px 1rem rgba(0, 0, 0, 0.267);
+  padding: 20px;
+}
+
+.location_p_header {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 10px 5px 0.5rem rgba(0, 0, 0, 0.267);
+}
+
+.location_p {
+  font-size: 17px;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* ===== MOBILE VIEW =====*/
+
+@media all and (max-width: 990px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: grid;
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-gap: 35px;
+    grid-template:
+      "image"
+      "general_data"
+      "description"
+      "location"
+      "contact";
+    margin: 0 auto;
+  }
+
+  .image {
+    grid-area: image;
+    min-width: 10px !important;
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px;
+    box-shadow: 10px 5px 1rem rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: center;
+  }
+
+  .image_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .general_data {
+    grid-area: general_data;
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px;
+    box-shadow: 10px 5px 1rem rgba(0, 0, 0, 0.267);
+    min-width: 10px !important;
+  }
+
+  .general_data_p {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  .description {
+    grid-area: description;
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px;
+    box-shadow: 10px 5px 1rem rgba(0, 0, 0, 0.267);
+    min-width: 10px !important;
+  }
+
+  .description_li {
+    list-style-type: none;
+  }
+
+  .description_p {
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  .contact {
+    grid-area: contact;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px;
+    box-shadow: 10px 5px 1rem rgba(0, 0, 0, 0.267);
+    padding-bottom: 30px;
+    min-width: 10px !important;
+  }
+
+  .contact_p {
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 10px 5px 0.5rem rgba(0, 0, 0, 0.267);
+  }
+
+  .location {
+    grid-area: location;
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px;
+    box-shadow: 10px 5px 1rem rgba(0, 0, 0, 0.267);
+    padding-left: 20px;
+    min-width: 10px !important;
+  }
+
+  .location_p_header {
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 10px 5px 0.5rem rgba(0, 0, 0, 0.267);
+  }
+
+  .location_p {
+    font-size: 17px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 15px;
+  }
+}

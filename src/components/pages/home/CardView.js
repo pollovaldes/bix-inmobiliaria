@@ -1,16 +1,17 @@
 import React from "react";
 import {
-	Carousel,
-	CarouselItem,
-	Button,
-	Card,
-	CardContent,
-	CardAction,
-	CardMedia,
+  Carousel,
+  CarouselItem,
+  Button,
+  Card,
+  CardContent,
+  CardAction,
 } from "ui-neumorphism";
 import ReactPlayer from "react-player";
 import "ui-neumorphism/dist/index.css";
 import "./CardView.css";
+
+import { useHistory } from "react-router-dom";
 
 //CIRUELOS//
 import ciruelos_cover_1 from "../../../img/ciruelos/card-cover/1.jpg";
@@ -38,229 +39,297 @@ import penthouse_cover_3 from "../../../img/penthouse/card-cover/9.jpg";
 // import metrica_cover_3 from "../../../img/penthouse/card-cover/9.jpg";
 
 export default function CardView() {
-	const Spacer = require("react-spacer");
+  const Spacer = require("react-spacer");
 
-	return (
-		<div>
-			<div className="card-view">
-				<Card rounded elevation={3} width={300}>
-					<Carousel cycle interval={3000} showArrows vertical>
-						<CarouselItem>
-							<img src={ciruelos_cover_1} className="image01" />
-						</CarouselItem>
-						<CarouselItem>
-							<img src={ciruelos_cover_2} className="image01" />
-						</CarouselItem>
-						<CarouselItem>
-							<img src={ciruelos_cover_3} className="image01" />
-						</CarouselItem>
-					</Carousel>
-					<CardContent>
-						<p style={{ color: "black", fontWeight: 300, fontSize: 22 }}>
-							Torre Ciruelos
-						</p>
-						<p style={{ color: "black", fontWeight: 100, fontSize: 17 }}>
-							Condominio Residencial Avivia
-						</p>
-					</CardContent>
-					<CardAction
-						style={{
-							justifyContent: "center",
-							alignContent: "center",
-							paddingTop: 10,
-							paddingBottom: 30,
-							display: "grid",
-							gridGap: 20,
-							gridAutoFlow: "column",
-						}}
-					>
-						<Button
-							rounded
-							color="var(--primary)"
-							size="large"
-							style={{ paddingRight: 35, paddingLeft: 35 }}
-						>
-							Ver más
-						</Button>
-					</CardAction>
-				</Card>
+  const history = useHistory();
 
-				<Card rounded elevation={3} width={300}>
-					<Carousel cycle interval={3000} showArrows vertical>
-						<CarouselItem>
-							<img src={hermoso_cover_1} className="image01" />
-						</CarouselItem>
-						<CarouselItem>
-							<img src={hermoso_cover_2} className="image01" />
-						</CarouselItem>
-						<CarouselItem>
-							<img src={hermoso_cover_3} className="image01" />
-						</CarouselItem>
-					</Carousel>
-					<CardContent>
-						<p style={{ color: "black", fontWeight: 300, fontSize: 22 }}>
-							Hermoso departamento
-						</p>
-						<p style={{ color: "black", fontWeight: 100, fontSize: 17 }}>
-							Condominio Residencial Interlomas
-						</p>
-					</CardContent>
-					<CardAction
-						style={{
-							justifyContent: "center",
-							alignContent: "center",
-							paddingTop: 10,
-							paddingBottom: 30,
-							display: "grid",
-							gridGap: 20,
-							gridAutoFlow: "column",
-						}}
-					>
-						<Button
-							rounded
-							color="var(--primary)"
-							size="large"
-							style={{ paddingRight: 35, paddingLeft: 35 }}
-						>
-							Ver más
-						</Button>
-					</CardAction>
-				</Card>
+  // const routeChange = (path) => {
+  //   history.push("/depto1");
+  // };
 
-				<Card rounded elevation={3} width={300}>
-					<Carousel cycle interval={3000} showArrows vertical>
-						<CarouselItem>
-							<img src={lujoso_cover_1} className="image01" />
-						</CarouselItem>
-						<CarouselItem>
-							<img src={lujoso_cover_1} className="image01" />
-						</CarouselItem>
-						<CarouselItem>
-							<img src={lujoso_cover_1} className="image01" />
-						</CarouselItem>
-					</Carousel>
-					<CardContent>
-						<p style={{ color: "black", fontWeight: 300, fontSize: 22 }}>
-							Lujuso departamento
-						</p>
-						<p style={{ color: "black", fontWeight: 100, fontSize: 17 }}>
-							Central Park, Interlomas
-						</p>
-					</CardContent>
-					<CardAction
-						style={{
-							justifyContent: "center",
-							alignContent: "center",
-							paddingTop: 10,
-							paddingBottom: 30,
-							display: "grid",
-							gridGap: 20,
-							gridAutoFlow: "column",
-						}}
-					>
-						<Button
-							rounded
-							color="var(--primary)"
-							size="large"
-							style={{ paddingRight: 35, paddingLeft: 35 }}
-						>
-							Ver más
-						</Button>
-					</CardAction>
-				</Card>
+  return (
+    <div>
+      <div className="card-view">
+        <Card rounded elevation={3} width={300}>
+          <Card inset>
+            <Carousel cycle interval={6000} showArrows vertical>
+              <CarouselItem>
+                <img
+                  src={ciruelos_cover_1}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src={ciruelos_cover_2}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src={ciruelos_cover_3}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+            </Carousel>
+          </Card>
+          <CardContent>
+            <p style={{ color: "black", fontWeight: 300, fontSize: 22 }}>
+              Torre Ciruelos
+            </p>
+            <p style={{ color: "black", fontWeight: 100, fontSize: 17 }}>
+              Condominio Residencial Avivia
+            </p>
+          </CardContent>
+          <Card></Card>
+          <CardAction
+            style={{
+              justifyContent: "center",
+              alignContent: "center",
+              paddingTop: 10,
+              paddingBottom: 30,
+              display: "grid",
+              gridGap: 20,
+              gridAutoFlow: "column",
+            }}
+          >
+            <Button
+              rounded
+              color="var(--primary)"
+              size="large"
+              style={{ paddingRight: 35, paddingLeft: 35 }}
+              onClick={() => history.push("/depto1")}
+            >
+              Ver más
+            </Button>
+          </CardAction>
+        </Card>
 
-				<Card rounded elevation={3} width={300}>
-					<Carousel cycle interval={3000} showArrows vertical>
-						<CarouselItem>
-							<img src={penthouse_cover_1} className="image01" />
-						</CarouselItem>
-						<CarouselItem>
-							<img src={penthouse_cover_2} className="image01" />
-						</CarouselItem>
-						<CarouselItem>
-							<img src={penthouse_cover_3} className="image01" />
-						</CarouselItem>
-					</Carousel>
-					<CardContent>
-						<p style={{ color: "black", fontWeight: 300, fontSize: 22 }}>
-							Penthouse
-						</p>
-						<p style={{ color: "black", fontWeight: 100, fontSize: 17 }}>
-							Hacienda del Ciervo, Palma Blanca
-						</p>
-					</CardContent>
-					<CardAction
-						style={{
-							justifyContent: "center",
-							alignContent: "center",
-							paddingTop: 10,
-							paddingBottom: 30,
-							display: "grid",
-							gridGap: 20,
-							gridAutoFlow: "column",
-						}}
-					>
-						<Button
-							rounded
-							color="var(--primary)"
-							size="large"
-							style={{ paddingRight: 35, paddingLeft: 35 }}
-						>
-							Ver más
-						</Button>
-					</CardAction>
-				</Card>
+        <Card rounded elevation={3} width={300}>
+          <Card inset>
+            <Carousel cycle interval={6000} showArrows vertical>
+              <CarouselItem>
+                <img
+                  src={hermoso_cover_1}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src={hermoso_cover_2}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src={hermoso_cover_3}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+            </Carousel>
+          </Card>
+          <CardContent>
+            <p style={{ color: "black", fontWeight: 300, fontSize: 22 }}>
+              Hermoso departamento
+            </p>
+            <p style={{ color: "black", fontWeight: 100, fontSize: 17 }}>
+              Condominio Residencial Interlomas
+            </p>
+          </CardContent>
+          <CardAction
+            style={{
+              justifyContent: "center",
+              alignContent: "center",
+              paddingTop: 10,
+              paddingBottom: 30,
+              display: "grid",
+              gridGap: 20,
+              gridAutoFlow: "column",
+            }}
+          >
+            <Button
+              rounded
+              color="var(--primary)"
+              size="large"
+              style={{ paddingRight: 35, paddingLeft: 35 }}
+              onClick={() => history.push("/depto2")}
+            >
+              Ver más
+            </Button>
+          </CardAction>
+        </Card>
 
-				<Card rounded elevation={3} width={300}>
-					<Carousel cycle interval={3000} vertical>
-						<CarouselItem>
-							<ReactPlayer
-								url="https://www.youtube.com/watch?v=yWsKTMmIkys"
-								controls={true}
-								muted={true}
-								width={300}
-								height={600}
-								loop={true}
-							/>
-						</CarouselItem>
-						{/* <CarouselItem>
+        <Card rounded elevation={3} width={300}>
+          <Card inset>
+            <Carousel cycle interval={6000} showArrows vertical>
+              <CarouselItem>
+                <img
+                  src={lujoso_cover_1}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src={lujoso_cover_2}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src={lujoso_cover_3}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+            </Carousel>
+          </Card>
+          <CardContent>
+            <p style={{ color: "black", fontWeight: 300, fontSize: 22 }}>
+              Lujuso departamento
+            </p>
+            <p style={{ color: "black", fontWeight: 100, fontSize: 17 }}>
+              Central Park, Interlomas
+            </p>
+          </CardContent>
+          <CardAction
+            style={{
+              justifyContent: "center",
+              alignContent: "center",
+              paddingTop: 10,
+              paddingBottom: 30,
+              display: "grid",
+              gridGap: 20,
+              gridAutoFlow: "column",
+            }}
+          >
+            <Button
+              rounded
+              color="var(--primary)"
+              size="large"
+              style={{ paddingRight: 35, paddingLeft: 35 }}
+              onClick={() => history.push("/depto3")}
+            >
+              Ver más
+            </Button>
+          </CardAction>
+        </Card>
+
+        <Card rounded elevation={3} width={300}>
+          <Card inset>
+            <Carousel cycle interval={6000} showArrows vertical>
+              <CarouselItem>
+                <img
+                  src={penthouse_cover_1}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src={penthouse_cover_2}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  src={penthouse_cover_3}
+                  className="image01"
+                  alt="Carousel item"
+                />
+              </CarouselItem>
+            </Carousel>
+          </Card>
+          <CardContent>
+            <p style={{ color: "black", fontWeight: 300, fontSize: 22 }}>
+              Penthouse
+            </p>
+            <p style={{ color: "black", fontWeight: 100, fontSize: 17 }}>
+              Hacienda del Ciervo, Palma Blanca
+            </p>
+          </CardContent>
+          <CardAction
+            style={{
+              justifyContent: "center",
+              alignContent: "center",
+              paddingTop: 10,
+              paddingBottom: 30,
+              display: "grid",
+              gridGap: 20,
+              gridAutoFlow: "column",
+            }}
+          >
+            <Button
+              rounded
+              color="var(--primary)"
+              size="large"
+              style={{ paddingRight: 35, paddingLeft: 35 }}
+              onClick={() => history.push("/depto4")}
+            >
+              Ver más
+            </Button>
+          </CardAction>
+        </Card>
+
+        <Card rounded elevation={3} width={300}>
+          <Carousel cycle interval={6000} vertical>
+            <CarouselItem>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=yWsKTMmIkys"
+                controls={true}
+                muted={true}
+                width={300}
+                height={600}
+                loop={true}
+              />
+            </CarouselItem>
+            {/* <CarouselItem>
 							<img src={img2} className="image01" />
 						</CarouselItem>
 						<CarouselItem>
 							<img src={img3} className="image01" />
 						</CarouselItem> */}
-					</Carousel>
-					<CardContent>
-						<p style={{ color: "black", fontWeight: 300, fontSize: 22 }}>
-							Lindo departamento
-						</p>
-						<p style={{ color: "black", fontWeight: 100, fontSize: 17 }}>
-							Central Park, Interlomas
-						</p>
-					</CardContent>
-					<CardAction
-						style={{
-							justifyContent: "center",
-							alignContent: "center",
-							paddingTop: 10,
-							paddingBottom: 30,
-							display: "grid",
-							gridGap: 20,
-							gridAutoFlow: "column",
-						}}
-					>
-						<Button
-							rounded
-							color="var(--primary)"
-							size="large"
-							style={{ paddingRight: 35, paddingLeft: 35 }}
-						>
-							Ver más
-						</Button>
-					</CardAction>
-				</Card>
-			</div>
-			<Spacer height="100px" />
-		</div>
-	);
+          </Carousel>
+          <CardContent>
+            <p style={{ color: "black", fontWeight: 300, fontSize: 22 }}>
+              Lindo departamento
+            </p>
+            <p style={{ color: "black", fontWeight: 100, fontSize: 17 }}>
+              Central Park, Interlomas
+            </p>
+          </CardContent>
+          <CardAction
+            style={{
+              justifyContent: "center",
+              alignContent: "center",
+              paddingTop: 10,
+              paddingBottom: 30,
+              display: "grid",
+              gridGap: 20,
+              gridAutoFlow: "column",
+            }}
+          >
+            <Button
+              rounded
+              color="var(--primary)"
+              size="large"
+              style={{ paddingRight: 35, paddingLeft: 35 }}
+              onClick={() => history.push("/depto5")}
+            >
+              Ver más
+            </Button>
+          </CardAction>
+        </Card>
+      </div>
+      <Spacer height="100px" />
+    </div>
+  );
 }
