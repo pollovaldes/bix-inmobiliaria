@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bix-inmobiliaria/static/css/main.eca19fed.chunk.css",
-    "main.js": "/bix-inmobiliaria/static/js/main.f7e65976.chunk.js",
-    "main.js.map": "/bix-inmobiliaria/static/js/main.f7e65976.chunk.js.map",
+    "main.js": "/bix-inmobiliaria/static/js/main.a1f226e2.chunk.js",
+    "main.js.map": "/bix-inmobiliaria/static/js/main.a1f226e2.chunk.js.map",
     "runtime-main.js": "/bix-inmobiliaria/static/js/runtime-main.8b55a1c5.js",
     "runtime-main.js.map": "/bix-inmobiliaria/static/js/runtime-main.8b55a1c5.js.map",
     "static/css/2.99af6af8.chunk.css": "/bix-inmobiliaria/static/css/2.99af6af8.chunk.css",
@@ -61,6 +61,6 @@
     "static/css/2.99af6af8.chunk.css",
     "static/js/2.238637c7.chunk.js",
     "static/css/main.eca19fed.chunk.css",
-    "static/js/main.f7e65976.chunk.js"
+    "static/js/main.a1f226e2.chunk.js"
   ]
 }
